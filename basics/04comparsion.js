@@ -11,7 +11,8 @@
 console.log(null > 0); /* False */
 console.log(null == 0); /* false */
 console.log(null >= 0); /* True, as when we are checking the value, null is considered as 0  */
-// Interview Question
+// Interview Question - Null means completely empty
+
 
 console.log(undefined == 0);
 console.log(undefined > 0);
