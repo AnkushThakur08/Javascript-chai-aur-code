@@ -61,16 +61,21 @@ console.log(null >= 0); /* True, as when we are checking the value, null is cons
 ---
 
 ### Heap and Stack in JavaScript
+
 - In Javascript we have classified Javascript in two Types
   - Primitive - `string, number, bigint, boolean, undefined, null, symbol`
   - Non Primitive - `Array, Objects, Functions`
 - There are 2 types of memories that are used in Javascript
+
   - Stack - for **Primitive Datatypes**
     - In stack memory we will get the **copy of variable**
     - Apko uski copy milte hai
   - Heap - for **Non-Primitive Datatypes**
+
     - In Heap memory we get the **Reference**
     - So, jo bhi change hoga, vo Original value me hoga
+
+    ![Stack and Heap Image](./assets/stack%20and%20heap.png)
 
 ```Javascript
 // Primitive Types - Stack
@@ -97,7 +102,7 @@ let userTwo =  userOne; /* Here we are getting the reference, therefore it will 
 
 // Now, if we dont want to change the reference then we need to create a copy of userOne, this could be done my spread operator
 
-// let userTwo = {...userOne} 
+// let userTwo = {...userOne}
 
 userTwo.email = "ankush@gmail.com";
 
@@ -105,5 +110,3 @@ console.log(userOne);
 console.log(userTwo);
 
 ```
-
-![Stack and Heap Image](./assets/stack%20and%20heap.png)
