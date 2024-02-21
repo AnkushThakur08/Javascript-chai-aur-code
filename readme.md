@@ -110,3 +110,11 @@ console.log(userOne);
 console.log(userTwo);
 
 ```
+
+### String
+
+- We can Declare the String using `new` Keyword
+- `const myVar = new String("Hello World");`
+- MyVar will be an Object which will have key value pair
+- In JS new use for Objects
+  ![String Image](./assets/string.PNG)
