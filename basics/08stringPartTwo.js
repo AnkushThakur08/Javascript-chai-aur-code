@@ -21,7 +21,7 @@ console.log(newName.at(-1)); /* r */
 
 // subString - returns the part of the string between the start and end indexes, or to the end of the string.
 /* 1st - indexStart - index of the first character to include in the returned substring. */
-/* IndexEnd is optional */
+/* IndexEnd is optional, IndexEnd element is not included */
 console.log(newName.substring(0)); /* Ankush Thakur */
 console.log(newName.substring(1, 5)); /* nkus*/
 console.log(newName.substring(7, 11)); /* nkus*/
@@ -30,3 +30,26 @@ console.log(newName.substring(7, 11)); /* nkus*/
 console.log(newName.slice(0)); /* Ankush Thakur */
 console.log(newName.slice(1, 5)); /* nkus*/
 console.log("CCCC", newName.slice(-6, 13)); /* Thakur*/
+
+
+// concate - It concatenates the string arguments to this string and returns a new string.
+// BUT RECOMMENED IS INTERPOLATION
+console.log(newName, myName)
+
+
+// Includes - performs a case-sensitive search
+
+
+
+
+
+// charCodeAt() -  returns an integer between 0 and 65535 representing the UTF-16 code, ONLY return the integer
+console.log(newName.charCodeAt(0)) /* A ka 65 */
+
+// charCodeAt() - returns a non-negative integer that is the Unicode code point value
+console.log("😍".codePointAt(0))
+
+// Ends
+
+
+
