@@ -31,49 +31,45 @@ console.log(newName.slice(0)); /* Ankush Thakur */
 console.log(newName.slice(1, 5)); /* nkus*/
 console.log("CCCC", newName.slice(-6, 13)); /* Thakur*/
 
-
 // concate - It concatenates the string arguments to this string and returns a new string.
 // BUT RECOMMENED IS INTERPOLATION
-console.log(newName, myName)
+console.log(newName, myName);
 
 // Includes - performs a case-sensitive search, It cannot be Regex
-console.log(newName.includes("Anku")) /* True */
-console.log(newName.includes("Anks")) /* False */
-console.log(newName.includes("Anshika")) /* False */
-
+console.log(newName.includes("Anku")); /* True */
+console.log(newName.includes("Anks")); /* False */
+console.log(newName.includes("Anshika")); /* False */
 
 // lastIndexOf()  - searches this string and returns the index of the last occurrence, if not found then -1
 // IT IS A CASE SENSITIVE
 const paragraph = "I think Ruth's dog is cuter than your dog! is";
-console.log(paragraph.lastIndexOf("Ankush")) /* -1 */
-console.log(paragraph.lastIndexOf("dog")) /* 38 */
+console.log(paragraph.lastIndexOf("Ankush")); /* -1 */
+console.log(paragraph.lastIndexOf("dog")); /* 38 */
 
 // match() - retrieves the result of matching this string against a regular expression.
-const regex = /[A-Z]/g; /* Capital A to Z, /g - stands for global flags,  When this flag is used, searches for all matches within the entire string. Without this flag, it would only find the first match and then stop. */
+const regex =
+  /[A-Z]/g; /* Capital A to Z, /g - stands for global flags,  When this flag is used, searches for all matches within the entire string. Without this flag, it would only find the first match and then stop. */
 const found = paragraph.match(regex);
 console.log(found); /* ["T", "R"] */
 
-
 // String.raw()
-const filePath = String.raw`C:\Development\profile\aboutme.html`; 
-const newData = "C:\Development\profile\aboutme.html";
+const filePath = String.raw`C:\Development\profile\aboutme.html`;
+const newData = "C:Developmentprofileaboutme.html";
 
 console.log(`The file was uploaded from: ${filePath}`); /* "The file was uploaded from: C:\Development\profile\aboutme.html" */
-console.log(`The file was uploaded from: ${newData}`);  /* "The file was uploaded from: C:Developmentprofileaboutme.html" */
-
+console.log(`The file was uploaded from: ${newData}`); /* "The file was uploaded from: C:Developmentprofileaboutme.html" */
 
 // repeat()
-console.log(newName.repeat(2)) /* Ankush ThakurAnkush Thakur */
+console.log(newName.repeat(2)); /* Ankush ThakurAnkush Thakur */
 
 //replace() -  returns a new string with one, some, or all matches of a pattern replaced by a replacement
-const sentence = 'The quick brown fox jumps over the lazy dog';
+const sentence = "The quick brown fox jumps over the lazy dog";
 
 function toUpperCase(match) {
-    return match.toUpperCase();
+  return match.toUpperCase();
 }
 
-const newSentence = sentence.replace(/([a-z]+)/g, toUpperCase);
-console.log(newSentence); /* THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG */
+/* THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG */
 
 // charCodeAt() -  returns an integer between 0 and 65535 representing the UTF-16 code, ONLY return the integer
 // console.log(newName.charCodeAt(0)) /* A ka 65 */
@@ -82,6 +78,3 @@ console.log(newSentence); /* THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG */
 // console.log("😍".codePointAt(0))
 
 // Ends
-
-
-
