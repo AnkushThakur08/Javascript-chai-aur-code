@@ -116,5 +116,31 @@ console.log(userTwo);
 - We can Declare the String using `new` Keyword
 - `const myVar = new String("Hello World");`
 - MyVar will be an Object which will have key value pair
-- In JS new use for Objects
   ![String Image](./assets/string.PNG)
+
+### Methods in String
+
+```javascript
+const myVar = new String("Hello World");
+const gameName = new String("hitesh-hc-com");
+```
+
+| Methods            | Explanation                                                                            | Code                                                                      | Output                              |
+| ------------------ | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------- |
+| **length**         | Provide length of the given String                                                     | `console.log(gameName.length)`                                            | 13                                  |
+| **charAt(2)**      | Return character at index 2                                                            | `console.log(gameName.charAt(2))`                                         | t                                   |
+| **indexOf(t)**     | Return index of character 't'                                                          | `console.log(gameName.indexOf("t"))`                                      | 2                                   |
+| **substring(4,8)** | Get substring from index 4 to index 7 as EndIndex is excluded                          | `console.log(gameName.substring(4, 8));`                                  | sh-h                                |
+| **slice(-4,8)**    | Same as SubString, but also accepts the **Ne** Value, -8 from last and 1 from Starting | `console.log(gameName.slice(-8, 1);`                                      | hitesh                              |
+| **trim()**         | Remove leading and trailing spaces                                                     | `console.log("    Ankush Thakur    ".trim());`                            | Ankush Thakur                       |
+| **replace**        | find the word in the string and replaces it                                            | `console.log("https://hitesh.com/hitesh%20choudhary.replace("%20", "-"))` | https://hitesh.com/hitesh-choudhary |
+| **includes**       | return TRUE if found the element in the String, Otherwise False, CASE SENSITIVE        | `console.log("Hello Ankush, How are you".includes("are"));`               | true                                |
+| **split**          | takes a pattern and divides this string into an ordered list                           | `console.log(gameName.split("-"));`                                       | [ 'hitesh', 'hc', 'com' ]           |
+| **length**         | Provide length of the given String                                                     | `console.log(gameName.length)`                                            | 13                                  |
+| **length**         | Provide length of the given String                                                     | `console.log(gameName.length)`                                            | 13                                  |
+| **length**         | Provide length of the given String                                                     | `console.log(gameName.length)`                                            | 13                                  |
+| **length**         | Provide length of the given String                                                     | `console.log(gameName.length)`                                            | 13                                  |
+| **length**         | Provide length of the given String                                                     | `console.log(gameName.length)`                                            | 13                                  |
+| **length**         | Provide length of the given String                                                     | `console.log(gameName.length)`                                            | 13                                  |
+| **length**         | Provide length of the given String                                                     | `console.log(gameName.length)`                                            | 13                                  |
+| **length**         | Provide length of the given String                                                     | `console.log(gameName.length)`                                            | 13                                  |
