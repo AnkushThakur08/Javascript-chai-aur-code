@@ -111,6 +111,8 @@ console.log(userTwo);
 
 ```
 
+---
+
 ### String
 
 - We can Declare the String using `new` Keyword
@@ -185,4 +187,52 @@ console.log(Math.floor(Math.random() * (max - min + 1)) + min)
 
 
 console.log("jjjjj",Math.abs(100, 20))
+```
+
+
+---
+
+### Array
+
+- We can Declare array using new Keyword as well
+- ```const myArr2 = new Array(1,2,3,4,5)```
+- JavaScript array-copy operations create** Shallow Copy**
+  - Shallow copy - Is a copy which shares the SAME Reference Point, MTLB original me bhi change hoga
+  - Deep Copy - Is a copy which Does not share the same reference, MTLB original me change NAHI HOGA
+
+
+### Join
+```javascript
+const myArr = [0, 1, 2, 3, 4, 5]
+const newArr = myArr.join() /* Change the Type */
+
+console.log(myArr); /* [ 0, 1, 2, 3, 4, 5 ] */
+console.log( newArr); /* 0,1,2,3,4,5 */
+
+```
+
+### Slice, Splice
+- Splice Changes the Original Array, Slice Does not
+- Splice includes the endIndex, Slice Does not
+ ```javascript
+console.log("A ", myArr);
+
+const myn1 = myArr.slice(1, 3)
+
+console.log(myn1);
+console.log("B ", myArr);
+
+
+const myn2 = myArr.splice(1, 3)
+console.log("C ", myArr);
+console.log(myn2);
+
+
+// OUTPUT
+// A  [ 0, 1, 2, 3, 4, 5 ]
+// [ 1, 2 ]
+// B  [ 0, 1, 2, 3, 4, 5 ]
+// C  [ 0, 4, 5 ]
+// [ 1, 2, 3 ]
+
 ```
