@@ -144,3 +144,45 @@ const newData = "C:Developmentprofileaboutme.html";
 | **lastIndexOf()**  | searches this string and returns the index of the last occurrence, if not found then -1, IT is Case Sensitive                | `console.log(paragraph.lastIndexOf("Ankush"));    console.log(paragraph.lastIndexOf("dog"));`                       | -1, 38                                                                                                                          |
 | **match()**        | Matches the String, with the regular Experssion Regex, returns an array with the matches, returns null if no match is found. | `console.log(paragraph.match(regex))`                                                                               | ["T", "R"]                                                                                                                      |
 | **String.raw()**   | is a static method that is used to get the raw string form of template literals                                              | `console.log(`The file was uploaded from: ${filePath}`);  console.log(`The file was uploaded from: ${newData}`);  ` | "The file was uploaded from: C:\Development\profile\aboutme.html", The file was uploaded from: C:Developmentprofileaboutme.html |
+
+
+
+---
+
+### Numbers
+
+- You can Declare number with help of `new` Keyboard
+- `const balance = new Number(100)`
+-  We have round, floor, ceil, min, max which are self-explainatory
+
+
+```javascript
+const balance = new Number(100)
+const otherNumber = 123.8966
+const hundreds = 1000000
+```
+
+Methods in Numbers
+
+| Methods              | Explanation                                      | Code                                                                                         | Output                |
+| -------------------- | ------------------------------------------------ | -------------------------------------------------------------------------------------------- | --------------------- |
+| **toFixed()**        | Value upto how many Decimal places               | `console.log(balance.toFixed(2));`                                                           | 100.00                |
+| **toPrecision()**    | Decimal se PHLE KITNI DIGIT, so be very carefull | `console.log(gameName.otherNumber.toPrecision(1))   console.log(otherNumber.toPrecision(3))` | 1e+2,   124           |
+| **toLocaleString()** | Return number as per Different formats           | `console.log(hundreds.toLocaleString()), console.log(hundreds.toLocaleString('en-IN'))`      | 1,000,0000, 10,00,000 |
+| **abs()**            | always return a positive Integer                 | `console.log(Math.abs(-4));`                                                                 | 4                     |
+
+
+```javascript
+
+console.log(Math.random()); /* 0-1 */
+console.log((Math.random()*10) + 1); /* +1 , so that 0 should not be the output */
+console.log(Math.floor(Math.random()*10) + 1);
+
+const min = 10
+const max = 20
+
+console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+
+
+console.log("jjjjj",Math.abs(100, 20))
+```
