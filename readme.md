@@ -262,3 +262,43 @@ const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
 console.log(another_array.flat(Infinity)) /* Flat solve 2 level down */
 
 ```
+
+
+
+### Objects
+- Objects can we created in 2 ways
+  - Using Object Literals - IT IS NOT singleton
+  - Using Object.create - IT IS singleton
+
+- what is Singleton ?
+  - Singleton ke multiple instances bna skate hai
+
+- How we can create Objects
+```javascript
+
+const mySym = Symbol("key1")
+
+// SYmbol ese add krna hota hai
+  const JsUser = {
+    name: "Hitesh",
+    "full name": "Hitesh Choudhary",
+    [mySym]: "mykey1",
+    age: 18,
+    location: "Jaipur",
+    email: "hitesh@google.com",
+    isLoggedIn: false,
+    lastLoginDays: ["Monday", "Saturday"]
+
+// console.log(JsUser.email) /*hitesh@google.com"  */
+// console.log(JsUser["email"]) /* hitesh@google.com */
+// console.log(JsUser["full name"])
+// console.log(JsUser[mySym])
+}
+```
+- Behind the scenes, **apki keys aur values dono he string me store hota hai, esliye hum ["yha pe string use krte hai"]**
+
+- We can access object using
+  - . (dot) operator
+  - [] array Brackets
+
+

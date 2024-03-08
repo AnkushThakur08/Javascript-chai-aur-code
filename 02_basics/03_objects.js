@@ -1,11 +1,13 @@
-// singleton
+// singleton - yhe apni tra ka ek he object hai, INSTANCES CANNOT BE MADE
 // Object.create
 
-// object literals
+// object literals - iske mutiple INSTANCES baan skate hai
 
 const mySym = Symbol("key1")
 
 
+
+// How we can create object
 const JsUser = {
     name: "Hitesh",
     "full name": "Hitesh Choudhary",
