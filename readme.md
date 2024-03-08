@@ -236,3 +236,29 @@ console.log(myn2);
 // [ 1, 2, 3 ]
 
 ```
+
+### More about arrays
+```javascript
+const marvel_heros = ["thor", "Ironman", "spiderman"]
+const dc_heros = ["superman", "flash", "batman"]
+
+// marvel_heros.push(dc_heros)
+// console.log(marvel_heros) /* [ 'thor', 'Ironman', 'spiderman', [ 'superman', 'flash', 'batman' ] ] */
+// console.log(marvel_heros[3][1])
+```
+- Array ke ander hum array bhi push kr skate hai
+- To Resolve this situation we can use
+  - concat
+  - spread operator
+- **Both returns a new Array**, so make sure to store the result
+
+- If we have nested Array, we can use flat
+- Flat - Returns a new array with all sub-array elements
+```javascript
+const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
+
+// console.log(another_array.flat()) /* will solve 1 level down */
+// console.log(another_array.flat(2)) /* Flat solve 2 level down */
+console.log(another_array.flat(Infinity)) /* Flat solve 2 level down */
+
+```
