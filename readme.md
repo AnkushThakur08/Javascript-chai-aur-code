@@ -302,3 +302,6 @@ const mySym = Symbol("key1")
   - [] array Brackets
 
 
+- You can even Freeze the object
+- `Object.freeze(JsUser)`
+
