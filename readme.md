@@ -305,3 +305,7 @@ const mySym = Symbol("key1")
 - You can even Freeze the object
 - `Object.freeze(JsUser)`
 
+****
+
+#### ForEach
+- ForEach loop does not **return**
